@@ -1,0 +1,11 @@
+print(5 > 4)
+print(7 < 8)
+print(22 == 22)
+print(99 != 19)
+print(90 >= 90)
+print(87 <= 88)
+print(100 > 90)
+print(0 < 1)
+print(33 == 33)
+print(29 != 2)
+# აქ ისევ იგივე თუ სწორია true თუ არა false

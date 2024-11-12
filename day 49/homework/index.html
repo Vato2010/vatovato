@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ვებგვერდის სათაური</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>ვებგვერდის სათაური</h1>
+    <nav>
+        <a href="#section1">სექცია 1</a>
+        <a href="#section2">სექცია 2</a>
+        <a href="#section3">სექცია 3</a>
+        <a href="#section4">სექცია 4</a>
+    </nav>
+</header>
+
+<section id="section1" class="relative">
+    <h2>სექცია 1</h2>
+    <p>ეს არის პირველი სექცია.</p>
+</section>
+
+<section id="section2" class="static">
+    <h2>სექცია 2</h2>
+    <div class="static">
+        <p>ეს არის მეორე სექცია.</p>
+        <p class="shifted">ეს არის გადანაცვლებული კონტენტი.</p>
+    </div>
+</section>
+
+<section id="section3" style="position: relative; height: 200px;">
+    <h2>სექცია 3</h2>
+    <div class="absolute">
+        <p>ეს არის აბსოლუტურად პოზიციონირებული კონტენტი.</p>
+    </div>
+</section>
+
+<section id="section4">
+    <h2>სექცია 4</h2>
+    <div class="sticky">
+        <p>ეს არის სტიკი ელემენტი.</p>
+    </div>
+
+
+</body>
+</html>

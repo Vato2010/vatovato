@@ -1,0 +1,13 @@
+print("gamarjoba")
+print("gamarjoba")
+print("ragqvia?")
+print("me nika da shen ra gqvia?")
+print("me mqvia luka")
+print("sasiamovnoa sheni gacnoba nika")
+print("chemtvisac")
+print("riti saqmianob luka?")
+print("me fexburts vtamashob da shen riti saqmianob?")
+print("me programirebas vswavlob minda rom developeri gavxde")
+print("va dzalian magaria programireba dzalian sainteresoa")
+print("ki dzalian")
+# აქ დიალოგი შევქმენი

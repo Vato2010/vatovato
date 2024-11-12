@@ -1,0 +1,40 @@
+p{
+letter-spacing: normal;
+line-height: 24px;
+text-align: center;
+text-shadow: 2px 2px 5px gray; ;
+text-transform: uppercase;
+text-decoration: underline;
+}
+
+
+
+h1{
+letter-spacing: 2px;
+line-height: 1.5;
+text-align: left;
+text-shadow:3px 3px 8px red ;
+text-transform: capitalize;
+text-decoration: line-through;
+}
+
+h2{
+letter-spacing:-1px ;
+line-height: normal;
+text-align: right;
+text-shadow: 2px 2px 3px black;
+text-transform: lowercase;
+text-decoration: overline;
+}
+
+h3{
+letter-spacing: 5%;
+line-height: 150%;
+text-align: justify;
+text-shadow: 4px 4px 10px yellow;
+text-decoration: none;
+text-transform: none;
+
+}
+
+
