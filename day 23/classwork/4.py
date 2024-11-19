@@ -1,7 +1,20 @@
-#4.მომხმარებელს შემოატანინეთ თავისი ასაკი და თუ მისი ასაკი ემთხვევა თქვენსას მაშინ და-print-თ True სხვა შემთხვევაში false (არ გამოიყენოთ (if,else)
-
-user_age = int(input("Please enter your age: "))
-my_age = 30  
-print(user_age == my_age)
+#5.შექმენით calculator ფუნქცია რომელსაც ექნება ყველა მათემატიკური მოქმედება მაგალითად:+,-,*,/. ფუნქციას გადაეცით 3 არგუმენტი. პირველი იქნება პირველი რიცხვი, მეორე მეორე რიცხვი და მესამე მათემატიკური ოპერაციის ოპერატორი (+,-...). და აგეთ კალკულატორი
+name = int(input("რომელი ოპერაციის არჩევა გსურს? +,-,*,/ ? "))
+name =="+"
+number = int(input("enter your number"))
+number1 = int(input("enter your number"))
+print(number + number1)
+name =="-"
+number = int(input("enter your number"))
+number1 = int(input("enter your number"))
+print(number = number1)
+name = "*"
+number = int(input("enter your number"))
+number1 = int(input("enter your number"))
+print(number * number1)
+name = "/"
+number = int(input("enter your number"))
+number1 = int(input("enter your number"))
+print(number / number1)
 
 

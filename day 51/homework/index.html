@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ვებგვერდის მაგალითი</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ვებგვერდის სათაური</h1>
+        <nav>
+            <ul>
+                <li><a href="#section1">სექცია 1</a></li>
+                <li><a href="#section2">სექცია 2</a></li>
+                <li><a href="#section3">სექცია 3</a></li>
+                <li><a href="#section4">სექცია 4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section1">
+            <h2>სექცია 1: Static</h2>
+            <p>ეს სექცია პოზიციონირებულია ნაგულისხმევი (static) წესით.</p>
+        </section>
+
+        <section id="section2">
+            <h2>სექცია 2: Relative</h2>
+            <div class="relative-box">ეს ბლოკი გადაადგილებულია მარცხნივ და ზევით.</div>
+        </section>
+
+        <section id="section3">
+            <h2>სექცია 3: Absolute</h2>
+            <div class="absolute-box">აბსოლუტურად პოზიციონირებული ბლოკი</div>
+        </section>
+
+        <section id="section4">
+            <h2 class="sticky-title">სტიკი სათაური</h2>
+            <p>ამ სექციის სათაური რჩება ფიქსირებული, სანამ მასზე ქვევით არ ჩახვალთ.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 ყველა უფლება დაცულია</p>
+    </footer>
+</body>
+</html>
