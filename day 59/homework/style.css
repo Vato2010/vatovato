@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 50px;
+    box-sizing: border-box;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    border: 5px solid red;
+    background-color: rgb(241, 24, 24);
+    text-align: center;
+    animation-name: vato;
+    animation-duration: 1s;
+
+}
+
+
+@keyframes vato{
+    50% {
+        transform: rotate(200deg);
+    }
+
+    100% {
+        transform: translate(1000px);
+    }
+
+}
