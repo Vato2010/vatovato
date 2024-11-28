@@ -10,18 +10,18 @@ body {
     gap: 20px;
 }
 
-/* ბოქსის სტილები */
+
 .box {
     width: 200px;
     height: 200px;
-    background-color: #3498db; /* თავდაპირველი ფერი */
-    border-radius: 10px; /* მომრგვალებული კუთხეები */
+    background-color: #3498db; 
+    border-radius: 10px; 
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* hover ეფექტი */
+
 .box:hover {
-    background-color: #2ecc71; /* ფონდის ცვლილება */
-    transform: scale(1.1); /* ზომის გაზრდა */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* რბილი ჩრდილი */
+    background-color: #2ecc71; 
+    transform: scale(1.1); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
