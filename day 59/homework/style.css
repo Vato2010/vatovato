@@ -12,13 +12,16 @@ div{
     text-align: center;
     animation-name: vato;
     animation-duration: 1s;
+    animation-delay: 3s;
 
 }
 
 
+
+
 @keyframes vato{
     50% {
-        transform: rotate(200deg);
+        transform: rotate(1000deg);
     }
 
     100% {
@@ -26,3 +29,5 @@ div{
     }
 
 }
+
+   
