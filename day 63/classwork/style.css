@@ -1,0 +1,61 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+ }
+ 
+ header{
+     color: brown;
+     background-color: black;
+     height: 200px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ 
+ }
+ 
+ header h1{
+     margin: 0;
+     font-size: 2em;
+ }
+ 
+ main{
+     display: flex;
+     align-items: center;
+     justify-content: center; 
+     padding: 20px;
+ }
+ 
+ main img{
+     max-width: 200px; 
+     margin-right: 20px; 
+     border-radius: 10px;
+ }
+ 
+ 
+ 
+ 
+ main p{
+ 
+         font-size: 16px;
+         color: #333;
+ 
+ 
+ }
+ 
+ 
+
+
+@media (max-widht: 320px){
+  
+    main img{
+        width: 300px;
+       
+    }
+    main p{
+        width: 270px;
+        font-size: 1em;
+        color: blue;
+    }
+}
+/* flex-direction: column */
