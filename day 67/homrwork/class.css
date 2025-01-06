@@ -1,0 +1,15 @@
+h2{
+    color: black;
+    font-size: 1.5em;
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+body{
+    background-color: chocolate;
+}
+p{
+    color: black;
+    font-size: 1.5em;
+    font-family: monospace;
+    letter-spacing: 1px;
+}

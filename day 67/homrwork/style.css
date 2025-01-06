@@ -1,0 +1,103 @@
+
+body{
+    background-color:chocolate;
+    flex-direction: column;
+    margin: 0;
+    height: 25vh;
+   margin-right: 50px;
+   background-image: url("https://scontent.ftbs4-2.fna.fbcdn.net/v/t39.30808-6/408864179_342479481868687_2724919989645877908_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGyVgtp4aFeqoCOYTBXhwp0W7tgzUOr-gxbu2DNQ6v6DG4aLVTo2Lgy-T2WTNY6wcuaBpMPgOR85vOWAsZRCtxW&_nc_ohc=rL16pTwuHgAQ7kNvgECPstL&_nc_oc=AdjTjR6fWyQXni3gG2ylHqNw0xiNsrC_UGO2Lr8qb5Ew7g8r4mci0uT3iAqulKFgLM0&_nc_zt=23&_nc_ht=scontent.ftbs4-2.fna&_nc_gid=AX7tbDxkUBnlTIB5EIcw5lL&oh=00_AYBoxJT68kLGt7zPYQiODnvEPXgxIgK9HRaXmayu43mvZw&oe=67796D53");
+   background-size: cover;
+
+    
+}
+header{
+
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    gap: 15px;
+    margin-bottom: 10px;
+    font-size:2em
+    
+}
+h1{
+    font-size: 1em;
+   
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 253, 253);
+    margin-top: 10px;
+   
+}
+
+button{
+    text-decoration: none;
+    font-size: 10px;
+    padding: 10px 10px;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-family: cursive;
+    margin-right: 40px;
+    letter-spacing: 1px;
+    
+    
+   
+}
+
+button:hover{
+    background-color: black;
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+}
+
+a{
+text-decoration: none;
+
+margin-right: 10px;
+flex-direction: column;
+
+}
+
+
+img{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    animation-name: anim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; 
+
+
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+
+    animation-delay: 1s;}
+
+img:hover{
+    transform: scale(1.1);
+    filter: brightness(0.8); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
+}
+
+
+
+
+    
+
+ 
+
+
+h2{
+    font-size: 1em;
+   
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+marquee a img{
+    animation: alternate;
+    background-color: white;
+    padding: 5px;
+}
