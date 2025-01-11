@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+/* ინდივიდუალური სტილები */
+.rotate {
+    background-color: #ff6f61;
+}
+
+.scale {
+    background-color: #6fbf73;
+}
+
+.translate {
+    background-color: #6fa3ef;
+}
+
+.skew {
+    background-color: #f5a623;
+}
+
+/* hover ეფექტები */
+.rotate:hover {
+    transform: rotate(45deg);
+    background-color: #d95949;
+}
+
+.scale:hover {
+    transform: scale(1.5);
+    background-color: #509f5b;
+}
+
+.translate:hover {
+    transform: translate(50px, 50px);
+    background-color: #4e8bcc;
+}
+
+.skew:hover {
+    transform: skew(20deg, 20deg);
+    background-color: #c4871e;
+}
