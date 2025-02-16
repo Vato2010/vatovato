@@ -1,5 +1,5 @@
 function checkPassword() {
-    const password = "Group 41 is best"; 
+    let password = "Group 41 is best"; 
     let attempts = 3;
 
     while (attempts > 0) {
@@ -19,3 +19,5 @@ function checkPassword() {
     alert("თქვენ ამოგეწურათ ცდების რაოდენობა");
 }
 checkPassword();
+
+
