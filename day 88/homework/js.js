@@ -1,31 +1,32 @@
 
-const university = {
-    name: "საქართველოს ტექნიკური უნივერსიტეტი",
-    departments: 10,
-    website: "https://gtu.ge",
-    ratings: {
-      student1: 4.5,
-      student2: 4.8,
-      student3: 4.2
-    }
-  };
+// const university = {
+//     name: "საქართველოს ტექნიკური უნივერსიტეტი",
+//     departments: 10,
+//     website: "https://gtu.ge",
+//     ratings: {
+//       student1: 4.5,
+//       student2: 4.8,
+//       student3: 4.2
+//     }
+//   };
   
 
-  console.log("უნივერსიტეტის მონაცემები:");
-  for (let key in university) {
-    console.log(`${key}:`, university[key]);
-  }
+//   console.log("უნივერსიტეტის მონაცემები:");
+//   for (let key in university) {
+//     console.log(`${key}:`, university[key]);
+//   }
   
 
-  console.log("შეიცავს თუ არა scholarship?:", university.hasOwnProperty("scholarship"));
+//   console.log("შეიცავს თუ არა scholarship?:", university.hasOwnProperty("scholarship"));
   
-  let updatedUniversity = Object.assign({}, university, { studentsCount: 5000 });
-  console.log("განახლებული ობიექტი:", updatedUniversity);
-  Object.freeze(updatedUniversity);
-  updatedUniversity.name = "თბილისის სახელმწიფო უნივერსიტეტი"; 
-  updatedUniversity.studentsCount = 6000; 
-  console.log("ცვლილებების შემდეგ:", updatedUniversity);
-  console.log("ობიექტი გაყინულია?", Object.isFrozen(updatedUniversity));
+//   let updatedUniversity = Object.assign({}, university, { studentsCount: 5000 });
+//   console.log("განახლებული ობიექტი:", updatedUniversity);
+//   Object.freeze(updatedUniversity);
+//   updatedUniversity.name = "თბილისის სახელმწიფო უნივერსიტეტი"; 
+//   updatedUniversity.studentsCount = 6000; 
+//   console.log("ცვლილებების შემდეგ:", updatedUniversity);
+//   console.log("ობიექტი გაყინულია?", Object.isFrozen(updatedUniversity));
+
   const sportsClub = {
     clubName: "Barcelona",
     sportType: "Football",
