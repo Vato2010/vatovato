@@ -1,3 +1,3 @@
 msg = input()
-msg = msg.replace('#', ' ')
-print(msg)
+msg1 = msg.replace('#', ' ')
+print(msg1)
