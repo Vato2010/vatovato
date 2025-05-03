@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>classList Tasks</title>
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+    .active {
+      border: 2px solid green;
+    }
+    .important {
+      font-weight: bold;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Add/Remove Class -->
+  <div id="myDiv">This is myDiv</div>
+
+  <!-- Toggle Class -->
+  <button id="toggleButton">Toggle Active</button>
+  <div id="targetDiv">This is targetDiv</div>
+
+  <!-- Check for Class -->
+  <p id="checkParagraph" class="important">This paragraph is important.</p>
+
+  <script>
+    // Add a class
+    const myDiv = document.getElementById("myDiv");
+    myDiv.classList.add("highlight");
+
+    // Remove a class
+    myDiv.classList.remove("highlight");
+
+    // Toggle class on button click
+    const toggleButton = document.getElementById("toggleButton");
+    const targetDiv = document.getElementById("targetDiv");
+
+    toggleButton.addEventListener("click", () => {
+      targetDiv.classList.toggle("active");
+    });
+
+    // Check for a class
+    const checkParagraph = document.getElementById("checkParagraph");
+    const hasImportantClass = checkParagraph.classList.contains("important");
+    console.log("Paragraph has 'important' class:", hasImportantClass); // true
+  </script>
+
+</body>
+</html>
