@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goal Oriented Academy</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #heroVideo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .hero-content {
+      position: relative;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 2rem;
+      border-radius: 16px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ff6b6b;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 1rem;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #ff3b3b;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .course-card {
+      background: white;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .course-card img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #222;
+      color: white;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="hero">
+    <video autoplay muted loop id="heroVideo">
+      <source src="videos/goal-academy-intro.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h1>Goal Oriented Academy</h1>
+      <p>Unlock Your Potential With Modern Tech Skills</p>
+      <a href="#about-founder" class="btn">Explore Courses</a>
+    </div>
+  </header>
+
+  <!-- Founder Section -->
+  <section class="section" id="about-founder">
+    <h2>დამფუძნებლის შესახებ</h2>
+    <div style="max-width: 600px; margin: auto; text-align: left;">
+      <img src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-1/468299859_542306438777207_8421424349304221225_n.jpg?stp=c81.0.1366.1366a_dst-jpg_s200x200_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=B8DOEhQcsa0Q7kNvwGDgIwv&_nc_oc=Adnb7B9wmKjStwHS9yIj_ku5BKLcPfhZLuNVNVYS1fjDTzZM7CF3Xt00g4UvWnzuT4o&_nc_zt=24&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=H1qFcQU4lbdFJLit3BBXiQ&oh=00_AfJvizL9DHK9wESet7elu1FPFsTM16PRxOVzaMTXc2BnJA&oe=68236C1A" alt="ბატონი ნიკა" style="width: 150px; border-radius: 50%; display: block; margin: 0 auto 1rem auto;">
+      <h3>ბატონი ნიკა არის</h3>
+      <p>
+        ბატონი ნიკა არის Goal Oriented Academy-ის დამფუძნებელი. მას აქვს მრავალწლიანი გამოცდილება პროგრამირებაში და მიზნად აქვს დასახული ახალგაზრდებისთვის თანამედროვე ტექნოლოგიების ცოდნის მიცემა.
+      </p>
+      <p>
+        ნიკა ხელს უწყობს ახალგაზრდებს, რომ მარტივად ისწავლონ HTML, CSS, JavaScript, Python და სხვა საჭირო ტექნოლოგიები და გახდნენ წარმატებული დეველოპერები.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Goal Oriented Academy. All rights reserved.</p>
+  </footer>
+</body>
+</html>

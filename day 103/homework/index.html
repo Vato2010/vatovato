@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ფერის შეცვლა</title>
+  <style>
+    #colorBox {
+      width: 200px;
+      height: 200px;
+      background-color: lightgray;
+      margin-top: 20px;
+      border: 2px solid #000;
+      border-radius: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="changeColor()">შეცვალე ფერი</button>
+  <div id="colorBox"></div>
+
+  <script>
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    function changeColor() {
+      const box = document.getElementById('colorBox');
+      box.style.backgroundColor = getRandomColor();
+    }
+  </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ტექსტის დამალვა/გამოჩენა</title>
+  <style>
+    #myText {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="toggleText()">დამალე/გამოაჩინე ტექსტი</button>
+  <p id="myText">ეს არის დამალვადი ტექსტი!</p>
+
+  <script>
+    function toggleText() {
+      const text = document.getElementById('myText');
+      if (text.style.display === 'none') {
+        text.style.display = 'block';
+      } else {
+        text.style.display = 'none';
+      }
+    }
+  </script>
+
+</body>
+</html>
