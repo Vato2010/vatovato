@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tag Hunter</title>
+  <style>
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+  </ul>
+
+  <p id="count"></p>
+
+  <script>
+    const listItems = document.getElementsByTagName("li");
+
+    const count = listItems.length;
+
+    document.getElementById("count").textContent = "There are " + count + " <li> elements.";
+
+    for (let i = 0; i < listItems.length; i++) {
+      listItems[i].style.border = "1px solid black";
+      listItems[i].style.padding = "5px";
+      listItems[i].style.margin = "5px 0";
+    }
+  </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spy on the Squad</title>
+</head>
+<body>
+
+  <p class="note">This is an important note.</p>
+  <p>This is just a normal paragraph.</p>
+  <p class="note">Don't forget to finish your homework!</p>
+  <p class="note">Remember the meeting at 3 PM.</p>
+
+  <script>
+    const notes = document.getElementsByClassName("note");
+
+    for (let i = 0; i < notes.length; i++) {
+      notes[i].style.color = "red";
+      notes[i].style.fontWeight = "bold";
+    }
+  </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Build It from Nothing</title>
+  <style>
+    .dynamic-box {
+      background-color: lightgreen;
+      border: 2px solid green;
+      padding: 20px;
+      margin: 10px;
+      font-weight: bold;
+      font-size: 18px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    const newBox = document.createElement("div");
+
+    newBox.classList.add("dynamic-box");
+
+    newBox.textContent = "I'm alive!";
+
+    document.body.appendChild(newBox);
+  </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clear It All</title>
+</head>
+<body>
+
+  <ul id="item-list">
+    <li>Milk</li>
+    <li>Bread</li>
+    <li>Eggs</li>
+  </ul>
+
+  <button id="clear-btn">Clear All Items</button>
+
+  <script>
+    const clearBtn = document.getElementById("clear-btn");
+    const itemList = document.getElementById("item-list");
+
+    clearBtn.addEventListener("click", function() {
+      while (itemList.firstChild) {
+        itemList.removeChild(itemList.firstChild);
+      }
+    });
+  </script>
+
+</body>
+</html>

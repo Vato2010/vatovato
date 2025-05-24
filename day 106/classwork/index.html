@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+      transition: background-color 0.3s;
+    }
+
+    form {
+      display: inline-block;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #f2f2f2;
+    }
+
+    input {
+      display: flex;
+      margin-bottom: 15px;
+      padding: 10px;
+      width: 250px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #message {
+      font-size: 24px;
+      margin-top: 30px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="registrationForm">
+    <input type="text" id="firstName" placeholder="enter your name: ">
+    <input type="text" id="lastName" placeholder="enter your last name: ">
+    <input type="email" id="email" placeholder="enter your email: ">
+    <input type="password" id="password" placeholder="enter your password: ">
+    <input type="password" id="confirmPassword" placeholder="confirm your password: ">
+    <button type="submit">register</button>
+  </form>
+
+  <div id="message"></div>
+
+  <script>
+     form = document.getElementById('registrationForm');
+    const message = document.getElementById('message');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const firstName = document.getElementById('firstName').value.trim();
+      const lastName = document.getElementById('lastName').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+
+      if (!firstName || !lastName || !email || !password || !confirmPassword) {
+        alert('გთხოვ შეავსო ყველა ველი!');
+        return;
+      }
+
+      if (password !== confirmPassword) {
+        document.body.style.backgroundColor = 'red';
+        message.style.color = 'white';
+        message.textContent = 'Warning: პაროლები არ ემთხვევა!';
+      } else {
+        document.body.style.backgroundColor = 'blue'; 
+        message.style.color = 'white';
+        message.textContent = 'successfullylogin';
+      }
+    });
+  </script>
+
+</body>
+</html>
